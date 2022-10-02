@@ -1,0 +1,46 @@
+### Post auth/signup
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "ashkan@gmail.com",
+  "password":"Hadi2002"
+}
+
+
+### WhoAmI Get
+GET http://localhost:3000/auth/whoami
+
+
+### singout
+POST http://localhost:3000/auth/signout
+
+### Postauth/signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "mohammad@gmail.com",
+  "password":"Hadi2002"
+}
+
+### Get auth/:id
+GET http://localhost:3000/auth/6
+
+
+### Get auth?email=hadihe2002@gmail.com
+GET http://localhost:3000/auth?email=hadihe2002@gmail.com
+
+
+### Patch auth/:id
+PATCH http://localhost:3000/auth/6
+Content-Type: application/json
+
+{
+  "email": "hadi@gmail.com"
+}
+
+### Delete auth/:id
+DELETE http://localhost:3000/auth/15
+
+
